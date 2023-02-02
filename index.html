@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>SISTEMA ESCOLAR DE REGISTRO A EXAMENES</title>
+</head>
+
+<body>
+  <div id="container">
+    <div class="centralContainer">
+      <h1 class="tittleForm">INSCRIPCION A EXAMENES</h1>
+      <form class="formExam" id="formContent">
+        <label for="name">Nombre del alumno</label>
+        <input type="text" id="nameStudent" placeholder="Nombre/s y Apellido/s" class="formStudent">
+
+        <label for="mail">E-mail</label>
+        <input type="email" id="emailStudent" placeholder="emailejemplo@serviciodecorreo.com" class="formStudent">
+
+        <label for="document">DNI</label>
+        <input type="text" id="dniStudent" placeholder="11.222.333" class="formStudent">
+
+        <h3 class="tittleRadio">MATERIA A INSCRIBIR</h3>
+        <div class="radio">
+          <label for="couseOneRadio" class="labelCourse"><input type="radio" name="course" value="Analisis-matemtico"
+              id="radioOne">ANALISIS
+            MATEMATICO</label>
+          <label for="courseTwoRadio" class="labelCourse"><input type="radio" name="course"
+              value="Algebra-geometria-analitica" id="radioTwo">ALGEBRA Y
+            GEOMETRIA ANALITICA</label>
+          <label for="courseThreeRadio" class="labelCourse"><input type="radio" name="course" value=""
+              id="radioThree">FISICA
+            I</label>
+          <label for="courseFourRadio" class="labelCourse"><input type="radio" name="course" value=""
+              id="radioFour">FISICA
+            II</label>
+          <label for="courseFivefRadio" class="labelCourse"><input type="radio" name="course" value=""
+              id="radioFour">OTRA</label>
+        </div>
+        <label for="course" class="textInputCourse" id="textInputCourse">MATERIA ADEUDADA:</label>
+        <input type="text" id="inputCourse" placeholder="Ingrese la matearia adeudada a inscribir" class="inputCourse">
+        <button id="buttonStudent">ENVIAR</button>
+      </form>
+    </div>
+  </div>
+  <script src="escolarSystem.js"></script>
+</body>
+
+</html>
