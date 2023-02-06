@@ -24,7 +24,7 @@
         <input type="text" id="dniStudent" placeholder="11.222.333" class="formStudent">
 
         <h3 class="tittleRadio">MATERIA A INSCRIBIR</h3>
-        <div class="radio">
+        <form name="radioButtons" id="radio">
           <label for="couseOneRadio" class="labelCourse"><input type="radio" name="course" value="Analisis-matemtico"
               id="radioOne">ANALISIS
             MATEMATICO</label>
@@ -39,10 +39,10 @@
             II</label>
           <label for="courseFivefRadio" class="labelCourse"><input type="radio" name="course" value=""
               id="radioFour">OTRA</label>
-        </div>
+        </form name="radioButtons">
         <label for="course" class="textInputCourse" id="textInputCourse">MATERIA ADEUDADA:</label>
         <input type="text" id="inputCourse" placeholder="Ingrese la matearia adeudada a inscribir" class="inputCourse">
-        <button id="buttonStudent">ENVIAR</button>
+        <button id="buttonStudent" type="submit">ENVIAR</button>
       </form>
     </div>
   </div>

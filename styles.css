@@ -216,14 +216,25 @@ table {
   color: #fff;
   margin: 10px auto;
   border-radius: 10px;
-  padding: none;
+  font-size: 15px;
 }
 
-.textInputCourse,
+.textInputCourse {
+  visibility: hidden;
+  margin: 10px auto 15px auto;
+  font-size: 20px;
+
+}
+
 .inputCourse {
   visibility: hidden;
+  width: 60%;
+  margin: auto;
+  padding: 10px 0;
+
 
 }
+
 
 #buttonStudent:hover {
   transform: scale(1.1);
