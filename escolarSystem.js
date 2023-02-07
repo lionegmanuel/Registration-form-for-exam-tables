@@ -1,5 +1,5 @@
-let formStudent = document.getElementById("formContent");
-formStudent.addEventListener("submit", (submitForm) => {
+let formStudent = document.getElementById("buttonStudent");
+formStudent.addEventListener("click", (submitForm) => {
   let error = false; //cuando haya un error, no se enviara el formulario de inscripcion
   //obtencion de los datos rellenados en el formulario
   let nameStudent = document.getElementById("nameStudent").value;
@@ -21,7 +21,7 @@ formStudent.addEventListener("submit", (submitForm) => {
     alert("No se ha seleccionado ninguna materia");
     error = true;
   }
-  if (error) { submitForm.preventDefault(); }
+  if (error) { let buttonForm = document.getElementById("buttonStudent"); buttonForm.preventDefault(); }
   else { alert("INSCRIPCION REALIZADA CON EXITO"); }
 
 })
