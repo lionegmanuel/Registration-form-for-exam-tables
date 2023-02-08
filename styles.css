@@ -142,7 +142,8 @@ table {
   width: 85%;
   margin: 20px auto;
   background: linear-gradient(#7a9cb1, #ac8e66);
-  height: 850px;
+  height: 900px;
+  max-height: 900px;
 }
 
 .tittleForm {
@@ -211,25 +212,28 @@ table {
 
 #buttonStudent {
   width: 40%;
-  height: 40px;
+  height: 60px;
   background: #0f2634;
   color: #fff;
-  margin: 10px auto;
+  margin: 15px auto;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .textInputCourse {
   visibility: hidden;
-  margin: 10px auto 15px auto;
-  font-size: 20px;
+  margin: 0 auto 15px auto;
+  font-size: 25px;
+  color: #2c1b05;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
 
 .inputCourse {
   visibility: hidden;
-  width: 60%;
-  margin: auto;
+  width: 30%;
+  margin: 10px auto;
   padding: 10px 0;
 
 
