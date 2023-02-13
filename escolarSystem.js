@@ -19,22 +19,26 @@ formStudent.addEventListener("click", (submitForm) => {
     if (radioButtons.value == "Otra") {
       let inputCourseStudent = document.getElementById("inputCourse");
       let courseStudent = inputCourseStudent.value;
-      alert("DATOS REGISTRADOS\nNOMBRE: " + nameStudent + "\nCORREO ELECTRONICO: " + mailStudent + "\nDNI: " + dniStudent + "\nMATERIA A REGISTRAR: " + courseStudent);
-      console.log(nameStudent.value);
+      if (nameStudent.length == 0 || mailStudent.length == 0 || dniStudent.length == 0) {
+        alert("ERROR...\n¡Complete todos los campos!"); error = true; var userAdvertence = true;
+      }
+      else alert("DATOS REGISTRADOS\nNOMBRE: " + nameStudent + "\nCORREO ELECTRONICO: " + mailStudent + "\nDNI: " + dniStudent + "\nMATERIA A REGISTRAR: " + courseStudent);
+
     }
     else if (nameStudent.length == 0 || mailStudent.length == 0 || dniStudent.length == 0) {
-      alert("¡Complete todos los campos!"); error = true; var userAdvertence = true;
+      alert("ERROR...\n¡Complete todos los campos!"); error = true; var userAdvertence = true;
     }
     else { let courseStudent = radioButtons.value; alert("DATOS REGISTRADOS\nNOMBRE: " + nameStudent + "\nCORREO ELECTRONICO: " + mailStudent + "\nDNI: " + dniStudent + "\nMATERIA A REGISTRAR: " + courseStudent); }
   }
   else {
     if (userAdvertence) error = false;
     else {
-      alert("¡No se ha seleccionado ninguna materia!"); error = true;
+      alert("ERROR...\n¡Se debe seleccionar una materia!"); error = true;
+
     }
   }
   if (error) submitForm.preventDefault();  //previene el envio del formulario
-  else alert("INSCRIPCION REALIZADA CON EXITO");
+  else { alert("INSCRIPCION REALIZADA CON EXITO"); }
 
 })
 

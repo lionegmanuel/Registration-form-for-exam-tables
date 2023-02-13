@@ -143,6 +143,8 @@ table {
   margin: 20px auto;
   background: linear-gradient(#7a9cb1, #ac8e66);
   max-height: 950px;
+  min-width: 240px;
+
 }
 
 .tittleForm {
@@ -157,6 +159,7 @@ table {
 
 }
 
+
 .formExam {
   display: flex;
   flex-direction: column;
@@ -165,12 +168,17 @@ table {
   padding: 20px 10px;
 }
 
-.formExam label,
-.tittleRadio {
+.formExam label {
   color: #fff;
   font-size: 20px;
   margin: 10px auto;
 
+}
+
+.tittleRadio {
+  color: #fff;
+  font-size: 20px;
+  margin: 30px auto 0 auto;
 }
 
 .formExam input {
@@ -198,7 +206,7 @@ table {
   display: flex;
   flex-flow: column;
   width: 50%;
-  margin: auto;
+  margin: 10px auto;
 
 }
 
@@ -215,17 +223,17 @@ table {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 #buttonStudent {
   width: 40%;
-  height: 60px;
   background: #0f2634;
   color: #fff;
   margin: 10px auto;
   border-radius: 10px;
   font-size: 20px;
+  height: 50px;
 }
 
 #buttonStudent:hover {
@@ -271,20 +279,46 @@ table {
 /*seccion media queries */
 @media screen and (max-width: 1280px) {
   .radioButtons {
-    width: 10%;
-    flex-wrap: wrap;
+    width: 100%;
   }
-}
 
-@media screen and (max-width:970px) {
-  #buttonStudent {
-    width: 60%;
-    height: 40px;
+  .radioButtons label input {
+    width: fit-content;
   }
+
+  .tittleRadio {
+    width: fit-content;
+    text-align: center;
+    margin: 40px auto;
+
+  }
+
+  @media screen and (max-width: 800px) {
+
+    .radioButtons label,
+    .tittleRadio,
+    .formExam input {
+      font-size: 15px;
+    }
+
+    .tittleRadio {
+      margin: 30px auto 20px auto;
+    }
+
+    #buttonStudent {
+      height: 40px;
+      font-size: 15px;
+    }
+
+    .tittleForm {
+      font-size: 30px;
+    }
+
+
+  }
+
+
+  @media screen and (max-width: 470px) {}
+
+
 }
-
-@media screen and (max-width: 800px) {}
-
-@media screen and (max-width: 600px) {}
-
-@media screen and (max-width: 470px) {}
