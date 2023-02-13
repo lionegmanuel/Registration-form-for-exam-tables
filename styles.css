@@ -141,7 +141,7 @@ table {
   flex-flow: column;
   width: 85%;
   margin: 20px auto;
-  background: linear-gradient(#5886a3, #e6a34b);
+  background: linear-gradient(#0d649b, #ff9f21);
   height: max-content;
   min-width: 240px;
 
@@ -186,7 +186,7 @@ table {
   padding: 10px;
   font-size: 20px;
   margin: auto;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .formExam input:hover {
@@ -312,12 +312,6 @@ table {
     .tittleForm {
       font-size: 30px;
     }
-
-
   }
-
-
-  @media screen and (max-width: 470px) {}
-
 
 }
